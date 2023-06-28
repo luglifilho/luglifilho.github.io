@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potfólio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ae51000fca.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .foto-perfil {
+        height: 200px;
+        width: auto;
+        border-radius: 50%;
+      }
+
+      .corPrimaria {
+        background-color: #18bc9c;
+      }
+
+      .corSecundaria {
+        background-color: #2c3e50;
+      }
+
+      p {
+        font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: black;
+      }
+
+      .icones {
+        padding-left: 5px;
+      }
+
+      .titulosBrancos {
+        text-decoration: underline;
+        text-underline-position: below;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+      }
+
+      .titulosVerdes {
+        text-decoration: underline;
+        text-underline-position: below;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #18bc9c;
+      }
+
+      .textoBranco {
+        color: white !important;
+      }
+
+      .jumbotron {
+        margin-bottom: 0px;
+      }
+
+      .textoFooter {
+        margin: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      .btn {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand textoBranco" href="#">Daniel Lugli Filho</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#sobre-mim">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="jumbotron text-center corPrimaria">
+      <div class="container">
+        <img src="./img/Perfil 2.jpg" alt="" class="foto-perfil" />
+        <h1 class="jumbotron-heading textoBranco">Daniel Lugli Filho</h1>
+        <p class="lead textoBranco">Full Stack Developer</p>
+        <p>
+          <a href="#contato" class="btn btn-dark my-2">Contato</a>
+        </p>
+        <a href="https://www.linkedin.com/in/dfilho/ " target="_blank" >
+          <i class="icones fab fa-linkedin textoBranco" ></i
+        ></a>
+        <a href="https://github.com/luglifilho"  target="_blank"
+          ><i class="icones fab fa-github textoBranco"></i
+        ></a>
+        <a href="https://www.instagram.com/luglifilho/"  target="_blank"
+          ><i class="icones fab fa-instagram textoBranco"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <div class="album py-5 bg-light" id="projetos">
+      <div class="container">
+        <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="./img/Projeto.png"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Eu fiz esse projeto em um Bootcamp da Digital Innovation One.
+                  É um Jogo ao estilo Shooter e as tecnologias usadas foram:
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://luglifilho.github.io/Space-shooter-game/ " target="_blank"
+                      ><button
+                        type="button"
+                        class="btn btn-sm btn-outline-success"
+                      >
+                        Ver Projeto
+                      </button></a
+                    >
+                    <a href="https://github.com/luglifilho/Space-shooter-game" target="_blank"
+                      ><button
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                      >
+                        Código
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="/img/Projeto2.png"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Eu fiz esse projeto em um Bootcamp da Digital Innovation One.
+                  É um Jogo da memória e as tecnologias usadas foram:
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://luglifilho.github.io/jogo-da-memoria/" target="_blank">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-success"
+                      >
+                        Ver Projeto
+                      </button></a
+                    >
+                    <a href="https://github.com/luglifilho/jogo-da-memoria" target="_blank"
+                      ><button
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                      >
+                        Código
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="./img/Projeto.png"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Eu fiz esse projeto em um Bootcamp da Digital Innovation One.
+                  É um Jogo ao estilo Shooter e as tecnologias usadas foram:
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://luglifilho.github.io/Space-shooter-game/ " target="_blank"
+                      ><button
+                        type="button"
+                        class="btn btn-sm btn-outline-success"
+                      >
+                        Ver Projeto
+                      </button></a
+                    >
+                    <a href="https://github.com/luglifilho/Space-shooter-game" target="_blank"
+                      ><button
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                      >
+                        Código
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                alt="Thumbnail [100%x225]"
+                src="/luglifilho.github.io/img/Projeto 2.png"
+                data-holder-rendered="true"
+                style="height: 225px; width: 100%; display: block"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Eu fiz esse projeto em um Bootcamp da Digital Innovation One.
+                  É um Jogo da memória e as tecnologias usadas foram:
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://luglifilho.github.io/jogo-da-memoria/" target="_blank">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-success"
+                      >
+                        Ver Projeto
+                      </button></a
+                    >
+                    <a href="https://github.com/luglifilho/jogo-da-memoria" target="_blank"
+                      ><button
+                        type="button"
+                        class="btn btn-sm btn-outline-primary"
+                      >
+                        Código
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Sobre mim -->
+    <section class="jumbotron text-center corPrimaria" id="sobre-mim">
+      <div class="container">
+        <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
+        <p class="lead textoBranco">
+           Olá, meu nome é Daniel. Sou desenvolvedor apaixonado por tecnologia, formado em Engenharia, e possuo expertise em TypeScript, Node e React.
+           Estou em busca de uma posição desafiadora onde eu possa aplicar minhas habilidades técnicas e conhecimentos em gestão. 
+           Sou movido por alcançar resultados incríveis e estou constantemente em busca de aprendizado contínuo.
+       
+        </p> 
+      </div>
+    </section>
+
+    <!-- Contatos -->
+
+    <section id="contato">
+      <div class="container-fluid">
+        <a href="https://linktr.ee/luglifilho">
+        <h3 style="padding-top: 60px" class="text-center titulosVerdes">
+                    #OPENTOWORK
+        </h3></a>
+        <a href="mailto:luglifilho@hotmail.com" target="_blank">
+          <h4 style="padding-bottom: 10px" class="text-center">
+           luglifilho@hotmail.com
+          </h4></a
+        >
+        <a href="https://wa.me/5513981639131" target="_blank">
+        <h4
+          style="padding-bottom: 60px; margin-bottom: 0px"
+          class="text-center"
+        >
+          (13) 98163-9131
+        </h4>
+       </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="corSecundaria text-center">
+      <p class="textoBranco textoFooter">Copyright 2023</p>
+    </footer>
+  </body>
+</html>
