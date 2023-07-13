@@ -39,8 +39,9 @@
       }
 
       .corPrimaria {
-        background-color: #113647;
+        background-color: #011321;
         border-radius: 0;
+       border: 0;
       }
 
       .corSecundaria {
@@ -96,7 +97,7 @@
       }
       .otw {
         border-radius: 10px;
-        background-color: #244f64;
+        background-color: #011321;
         padding: 10px;
         color: inherit;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
@@ -104,9 +105,12 @@
       .otw:hover{
         transition: all 1s ease;
         transform: rotateX(360deg);
+      
       }
       .thecard {
-        transition: all 1s ease;          
+        transition: all 1s ease;    
+        background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255, 255, 255, 0));  
+        color: white;  
       }
       .thecard:hover {
         transition: all 1s ease;
@@ -117,7 +121,7 @@
 
     </style>
   </head>
-  <body>
+  <body >
     <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand textoBranco" href="#">Daniel Lugli Filho</a>
       <button
@@ -184,9 +188,9 @@
     </section>
 
     <!-- Projetos -->
-    <div class="album py-5 bg-light" id="projetos">
+    <div style="background-image: url(./img/background.jpg);" >
       <div class="container">
-        <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
+        <h3 class="jumbotron-heading text-center titulosBrancos">Projetos</h3>
         <div class="row">
           
           <div class="col-md-6 ">
@@ -438,7 +442,7 @@
     <section
       class="jumbotron text-center corPrimaria"
       id="sobre-mim"
-      style="padding-bottom: 20px"
+      style="padding-bottom: 20px; background-color: #011321;"
     >
       <div class="container">
         <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
