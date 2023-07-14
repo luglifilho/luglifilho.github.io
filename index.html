@@ -41,7 +41,7 @@
       .corPrimaria {
         background-color: #011321;
         border-radius: 0;
-       border: 0;
+        border: 0;
       }
 
       .corSecundaria {
@@ -92,9 +92,21 @@
       html {
         scroll-behavior: smooth;
       }
-      .btn {
+      .btn-cod {
         margin: 5px;
       }
+      .btn-cod:hover {
+        transition: all 1s ease;
+        transform: rotateX(360deg);
+      }
+      .btn-proj {
+        margin: 5px;
+      }
+      .btn-proj:hover {
+        transition: all 1s ease;
+        transform: rotateX(360deg);
+      }
+
       .otw {
         border-radius: 10px;
         background-color: #011321;
@@ -102,26 +114,45 @@
         color: inherit;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
       }
-      .otw:hover{
+      .otw:hover {
         transition: all 1s ease;
         transform: rotateX(360deg);
-      
       }
       .thecard {
-        transition: all 1s ease;    
-        background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255, 255, 255, 0));  
-        color: white;  
+        transition: all 1s ease;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        color: white;
       }
       .thecard:hover {
         transition: all 1s ease;
         background-color: #366f8b;
         color: #fff;
-        
-      }
 
+        .btn-cod {
+          border: solid 2px #03e9f4;
+          font-weight: bold;
+          background-color: #03e9f4;
+          color: #050801;
+          box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+            0 0 200px #03e9f4;
+        }
+
+        .btn-proj {
+          border: solid 2px #03f490;
+          font-weight: bold;
+          background-color: #03f490;
+          color: #050801;
+          box-shadow: 0 0 5px #03f490, 0 0 25px #03f490, 0 0 50px #03f490,
+            0 0 200px #03f490;
+        }
+      }
     </style>
   </head>
-  <body >
+  <body>
     <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand textoBranco" href="#">Daniel Lugli Filho</a>
       <button
@@ -188,12 +219,11 @@
     </section>
 
     <!-- Projetos -->
-    <div style="background-image: url(./img/background.jpg);" >
+    <div style="background-image: url(./img/background.jpg)">
       <div class="container">
         <h3 class="jumbotron-heading text-center titulosBrancos">Projetos</h3>
         <div class="row">
-          
-          <div class="col-md-6 ">
+          <div class="col-md-6">
             <div
               class="card mb-4 box-shadow thecard"
               style="
@@ -215,7 +245,7 @@
                   border-radius: 20px;
                 "
               />
-              <div class="card-body ">
+              <div class="card-body">
                 <p class="card-text">
                   Eu fiz esse projeto em um Curso de React do Curso Dev
                   Superior. É um catálogo de loja online, as tecnologias usadas
@@ -233,7 +263,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-success"
+                        class="btn btn-proj btn-sm btn-outline-success"
                       >
                         Ver Projeto
                       </button></a
@@ -243,7 +273,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-primary"
+                        class="btn btn-cod btn-sm btn-outline-primary"
                       >
                         Código
                       </button></a
@@ -293,7 +323,7 @@
                     >
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-success"
+                        class="btn btn-proj btn-sm btn-outline-success"
                       >
                         Ver Projeto
                       </button></a
@@ -303,7 +333,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-primary"
+                        class="btn btn-cod btn-sm btn-outline-primary"
                       >
                         Código
                       </button></a
@@ -353,7 +383,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-success"
+                        class="btn btn-proj btn-sm btn-outline-success"
                       >
                         Ver Projeto
                       </button></a
@@ -363,7 +393,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-primary"
+                        class="btn btn-cod btn-sm btn-outline-primary"
                       >
                         Código
                       </button></a
@@ -414,7 +444,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-success"
+                        class="btn btn-proj btn-sm btn-outline-success"
                       >
                         Ver Projeto
                       </button></a
@@ -424,7 +454,7 @@
                       target="_blank"
                       ><button
                         type="button"
-                        class="btn btn-sm btn-outline-primary"
+                        class="btn btn-cod btn-sm btn-outline-primary"
                       >
                         Código
                       </button></a
@@ -442,7 +472,7 @@
     <section
       class="jumbotron text-center corPrimaria"
       id="sobre-mim"
-      style="padding-bottom: 20px; background-color: #011321;"
+      style="padding-bottom: 20px; background-color: #011321"
     >
       <div class="container">
         <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
@@ -470,28 +500,31 @@
 
     <section id="contato">
       <div class="container-fluid">
-        
         <a href="https://linktr.ee/luglifilho">
           <h3 style="padding-top: 50px" class="text-center">
             <a href="https://linktr.ee/luglifilho" target="_blank">
-              <button class="text-center textoBranco otw" style="border: none;">  #OPENTOWORK </button>
+              <button class="text-center textoBranco otw" style="border: none">
+                #OPENTOWORK
+              </button>
             </a>
           </h3></a
         >
         <br />
-        
-          <h4 style="padding-bottom: 10px" class="text-center">
-            <a href="mailto:luglifilho@hotmail.com" target="_blank">  luglifilho@hotmail.com </a>
-          </h4>
-        
-        
-          <h4
-            style="padding-bottom: 60px; margin-bottom: 0px"
-            class="text-center"
+
+        <h4 style="padding-bottom: 10px" class="text-center">
+          <a href="mailto:luglifilho@hotmail.com" target="_blank">
+            luglifilho@hotmail.com
+          </a>
+        </h4>
+
+        <h4
+          style="padding-bottom: 60px; margin-bottom: 0px"
+          class="text-center"
+        >
+          <a href="https://wa.me/5513981639131" target="_blank">
+            (13) 98163-9131</a
           >
-          <a href="https://wa.me/5513981639131" target="_blank"> (13) 98163-9131</a>
-          </h4>
-        
+        </h4>
       </div>
     </section>
 
